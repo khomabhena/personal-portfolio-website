@@ -50,6 +50,8 @@ const site = {
   sameAs: [
     'https://github.com/khomabhena',
     'https://www.linkedin.com/in/khomabhena/',
+    'https://www.credly.com/users/kholwani-mabhena/skills',
+    'https://tapseedpayments.com/team/kholwani-mabhena',
     FALLBACK_URL,
   ],
   knowsAbout: [
