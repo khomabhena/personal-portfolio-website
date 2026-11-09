@@ -159,7 +159,7 @@ const getProjects = () => {
       link: '/projects/portfolio',
       tech: 'Next JS',
       techMore: 'Next JS / Tailwind CSS',
-      liveDemo: 'https://khomabhena.vercel.app',
+      liveDemo: 'https://www.khomabhena.site',
       gitHubLink: 'https://github.com/khomabhena/personal-portfolio-website',
       desc: 'Personal portfolio developed using Next.js and Tailwind, showcasing business systems delivery and Meta-certified engineering work.',
       techStack: [

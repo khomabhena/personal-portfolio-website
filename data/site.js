@@ -1,7 +1,9 @@
-const SITE_URL = 'https://khomabhena.vercel.app'
+const SITE_URL = 'https://www.khomabhena.site'
+const FALLBACK_URL = 'https://khomabhena.vercel.app'
 
 const site = {
   url: SITE_URL,
+  fallbackUrl: FALLBACK_URL,
   name: 'Kholwani Mabhena',
   title: 'Kholwani Mabhena | Business Systems & Software Development Lead',
   description:
@@ -48,6 +50,7 @@ const site = {
   sameAs: [
     'https://github.com/khomabhena',
     'https://www.linkedin.com/in/khomabhena/',
+    FALLBACK_URL,
   ],
   knowsAbout: [
     'Business systems integration',

@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://khomabhena.vercel.app/</loc>
+    <loc>https://www.khomabhena.site/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://khomabhena.vercel.app/resume</loc>
+    <loc>https://www.khomabhena.site/resume</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://khomabhena.vercel.app/projects/zipit-bankware</loc>
+    <loc>https://www.khomabhena.site/projects/zipit-bankware</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://khomabhena.vercel.app/projects/core-banking-api</loc>
+    <loc>https://www.khomabhena.site/projects/core-banking-api</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://khomabhena.vercel.app/projects/redboxx</loc>
+    <loc>https://www.khomabhena.site/projects/redboxx</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://khomabhena.vercel.app/projects/getbucks-vas</loc>
+    <loc>https://www.khomabhena.site/projects/getbucks-vas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://khomabhena.vercel.app/projects/eshagi</loc>
+    <loc>https://www.khomabhena.site/projects/eshagi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://khomabhena.vercel.app/projects/appletree</loc>
+    <loc>https://www.khomabhena.site/projects/appletree</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://khomabhena.vercel.app/projects/ukc</loc>
+    <loc>https://www.khomabhena.site/projects/ukc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://khomabhena.vercel.app/projects/daylong</loc>
+    <loc>https://www.khomabhena.site/projects/daylong</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://khomabhena.vercel.app/projects/imali</loc>
+    <loc>https://www.khomabhena.site/projects/imali</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://khomabhena.vercel.app/projects/portfolio</loc>
+    <loc>https://www.khomabhena.site/projects/portfolio</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

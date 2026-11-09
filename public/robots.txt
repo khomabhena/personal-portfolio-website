@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://khomabhena.vercel.app/sitemap.xml
+Sitemap: https://www.khomabhena.site/sitemap.xml
