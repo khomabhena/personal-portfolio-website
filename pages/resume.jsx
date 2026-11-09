@@ -1,23 +1,26 @@
 import React from 'react';
-import Head from 'next/head';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import getExperience from '@/data/experience';
+import SEO from '@/components/SEO';
+import Navbar from '@/components/Navbar';
 
 const resume = () => {
+  const experience = getExperience();
+
   return (
     <>
-      <Head>
-        <title>Kholwani | Resume</title>
-        <meta
-          name='description'
-          content='I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences.'
-        />
-        <link rel='icon' href='/fav.png' />
-      </Head>
+      <SEO
+        title='Resume'
+        description='Resume of Kholwani Mabhena: Business Systems and Software Development Lead. Experience with Postilion, BankWare, ZIPIT 3.0, ZimSwitch, ISO 8583, payment gateways, React, Node.js, Django, and fintech delivery at Tapseed and Astro Mobile.'
+        path='/resume'
+        type='profile'
+      />
+      <Navbar />
 
       <div className='max-w-[940px] mx-auto p-2 pt-[120px]'>
         <h2 className='text-center'>Resume</h2>
         <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
-          <h2 className='text-center'>Kholwani Mabhena</h2>
+          <h2 className='text-center text-lg sm:text-2xl'>Kholwani Mabhena</h2>
           <div className='flex'>
             <a
               href='https://www.linkedin.com/in/khomabhena/'
@@ -35,192 +38,124 @@ const resume = () => {
             </a>
           </div>
         </div>
+
         <div className='text-center py-4 text-xl font-bold uppercase tracking-wider'>
           <div className='hidden sm:block'>
             <p>
-              Full Stack Developer <span className='px-1'>|</span> Android Development{' '}
+              Business Systems &amp; Software Development Lead
+              <span className='px-1'>|</span>
+              Meta Certified
             </p>
           </div>
           <div className='block sm:hidden'>
-            <p>Full Stack Developer</p>
-            <p className='py-2'>Android Development</p>
+            <p>Business Systems Lead</p>
+            <p className='py-2'>Meta Certified Engineer</p>
           </div>
         </div>
-        <p>
-          Analytical, innovative, and motivated web development professional
-          with experience in customer service, team leadership, and
-          organizational effectiveness in fast-paced and challenging
-          environments. Adept at developing strategies and driving streamlined
-          operations. Diverse analytical skills, team collaboration, and
-          relationship building. Consummate professional, and motivated leader,
-          with solid interpersonal abilities and complex problem-solving skills.
-          Effective and proven track record of critical thinking, idea
-          generation, and optimizing efficiencies.
+
+        <p className='text-center text-sm text-slate-600 pb-2'>
+          Harare, Zimbabwe · colwanymab@gmail.com · Integrations · APIs · Financial Operations · Delivery Leadership
         </p>
 
-        {/* Languages and Technologies */}
-        <div className=' py-4'>
-          <h5 className=' mt-8 text-slate-500 font-bold text-xl'>LANGUAGES AND TECHNOLOGIES</h5>
+        <p>
+          Business systems and software development lead with 8+ years building and
+          integrating operational and financial platforms, including 3+ years leading
+          delivery teams and vendor/partner integrations. Experienced connecting
+          day-to-day operational channels (POS, payment switches, customer apps) to
+          core financial systems (BankWare, ledgers, payment gateways) through design,
+          go-live, and ongoing support. Hands-on with SQL, APIs, data modelling, and
+          production services; works closely with operations, finance-facing processes,
+          IT counterparts, and external development partners.
+        </p>
+
+        <div className='py-4'>
+          <h5 className='mt-8 text-slate-500 font-bold text-xl'>SKILLS</h5>
           <p className='py-2'>
-
-            <span className='font-bold text-slate-600'>Proficient: </span>
-            <span className='px-2'>|</span>JavaScript
-            <span className='px-2'>|</span>Java
-            <span className='px-2'>|</span> React JS
-            <span className='px-2'>|</span>Next JS
-            <span className='px-2'>|</span>Tailwind CSS
-            <span className='px-2'>|</span>Node JS
-            <span className='px-2'>|</span>Express
-            <span className='px-2'>|</span>MongoDB
-            <span className='px-2'>|</span>Firebase
-            <span className='px-2'>|</span>SQL
-            <span className='px-2'>|</span>SQLIte
-            <span className='px-2'>|</span> JQuery
-            <span className='px-2'>|</span> HTML5
-            <span className='px-2'>|</span> CSS3
+            <span className='font-bold text-slate-600'>Business systems &amp; integration: </span>
+            System integration, API design, data modelling, financial reconciliation support,
+            transaction ledgers &amp; audit trails, go-live &amp; production support, stakeholder &amp; vendor coordination
           </p>
-          <p className=''>
-            <span className='font-bold text-slate-600'>Exposure: </span>
-            <span className='px-2'>|</span>Kotlin
-            <span className='px-2'>|</span>Python
-            <span className='px-2'>|</span>Angular
-            <span className='px-2'>|</span>C# 
+          <p className='py-1'>
+            <span className='font-bold text-slate-600'>Data &amp; backends: </span>
+            SQL, MySQL, SQLite, MongoDB, Node.js, Express.js, Python, Django REST Framework,
+            REST APIs, OpenAPI/Swagger
           </p>
-        </div>
-
-        {/* Skills */}
-        <div className=' py-4'>
-          <h5 className=' mt-8 text-slate-500 font-bold text-xl'>SKILLS</h5>
-          <p className='py-2'>Project Management
-            <span className='px-2'>|</span>Product Designing
-            <span className='px-2'>|</span>Designing Algorithms
-            <span className='px-2'>|</span>System Designing
-            <span className='px-2'>|</span>Project Structuring
-            <span className='px-2'>|</span>Visual Designing
-            <span className='px-2'>|</span>Managing Developers
-            <span className='px-2'>|</span>Assigning Responsibilities
-            <span className='px-2'>|</span>Discovering Developer Strengths
-            <span className='px-2'>|</span>Producing a well-built project
+          <p className='py-1'>
+            <span className='font-bold text-slate-600'>Financial / operational platforms: </span>
+            BankWare / core banking APIs, Postilion / PostBridge, ISO 8583, ZimSwitch, ZIPIT 3.0,
+            payment gateways, POS / merchant operations, VAS orchestration
+          </p>
+          <p className='py-1'>
+            <span className='font-bold text-slate-600'>Delivery: </span>
+            Technical leadership, cross-functional delivery, documentation,
+            system / integration / end-to-end testing, Git
+          </p>
+          <p className='py-1'>
+            <span className='font-bold text-slate-600'>Also: </span>
+            JavaScript, TypeScript, React, React Native, Expo, Next.js, Tailwind CSS
           </p>
         </div>
 
         <h5 className='mt-8 text-slate-500 font-bold text-xl uppercase'>
           Professional Experience
         </h5>
-        {/* Experience */}
-        <div className='py-6'>
+
+        {experience.map(({ id, company, location, role, period, bullets }) => (
+          <div key={id} className='py-6'>
+            <p className='italic'>
+              <span className='font-bold italic'>{company}</span>
+              <span className='px-2'>|</span>{location}
+            </p>
+            <p className='py-1 italic'>{role} ({period.toUpperCase()})</p>
+            <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
+              {bullets.map((bullet, index) => (
+                <li key={index}>{bullet}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+
+        <h5 className='mt-8 text-slate-500 font-bold text-xl uppercase'>
+          Education
+        </h5>
+        <div className='py-4'>
           <p className='italic'>
-            <span className='font-bold italic'>
-            UK Care Connection 
-            </span>
-            <span className='px-2'>|</span>Harare, ZW
+            <span className='font-bold italic'>Meta</span>
+            <span className='px-2'>|</span>Professional Certificates · 2023
           </p>
-          <p className='py-1 italic'>Full Stack Developer (AUGUST 2022 - MAY 2023)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Worked with the founders on mapping the development of their Care Workers Hiring platform.
-            </li>
-            <li>
-              Designed the UI & UX of the landing page with React, Next JS and Tailwind CSS
-            </li>
-            <li>
-              Delivered a full stack Next JS dashboard for applicants and employers
-            </li>
-            <li>
-              Integrated the platform with Stripe for handling subscriptions from employers
-            </li>
-            <li>
-              Build the database relations and host it on Firebase Firestore
-            </li>
+            <li>Back-End Developer Professional Certificate (June 2023 – October 2023)</li>
+            <li>Front-End Developer Professional Certificate (August 2023 – November 2023)</li>
+            <li>Mobile Developer Professional Certificate (October 2023 – December 2023)</li>
           </ul>
         </div>
-
-        <div className='py-6'>
+        <div className='py-4'>
           <p className='italic'>
-            <span className='font-bold italic'>
-            ASTRO Mobile 
-            </span>
-            <span className='px-2'>|</span>Harare, ZW
+            <span className='font-bold italic'>Midlands State University, Gweru</span>
           </p>
-          <p className='py-1 italic'>Chief Software Engineer (AUGUST 2019 - JUNE 2022)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>Led a team of 4 Senior Engineers on the designing and development of the EShagi platform on Android and Web</li>
-            <li>The app handled over 50,000 users and processed over a million dollars in civil servant loans</li>
-            <li>Designed the software specifications for the app and assigned roles to each developer</li>
-            <li>Developed the Android App and the algorithm which handled all the backend services</li>
-            <li>Approved UI & UX designs from the engineers</li>
-            <li>Handled presentations and meetings with stakeholders and potential investors</li>
-            <li>Organised Hackerthons to upskill junior developer</li>
-            <li>Participated in the hiring and vetting process of junior developers and Server Administrators</li>
-          </ul>
+          <p className='py-1 italic'>
+            BSc Information Systems Honours · August 2011 – (studies deferred; equivalent
+            practical experience through 8+ years professional delivery)
+          </p>
         </div>
 
-
-        {/* Personal Experience */}
-        {/* <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold italic'>
-              Teaching & Mentoring Web Development
-            </span>
-            <span className='px-2'>|</span>Dallas, TX
-          </p>
-          <p className='py-1 italic'>Code Commerce - Youtube Channel (2021 - Current)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              In 2021 I started “Code Commerce”, a YouTube channel focused on
-              sharing what I’m learning in web development, specifically
-              front-end development.
-            </li>
-            <li>
-              Private 1 on 1 Zoom coaching calls related to web development.
-              More specifically debugging, teaching basic web development
-              concepts and code reviews.
-            </li>
-          </ul>
-        </div> */}
-
-        {/*  */}
-        {/* <h5 className='text-center underline text-[18px] py-4'>
-          Other Professional Experience
-        </h5> */}
-      
-        {/* Experience */}
-        {/* <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold'>CITY OF SHERMAN, TX</span>
-            <span className='px-2'>|</span>Sherman, TX
-          </p>
-          <p className='py-1 italic'>Paramedic / Firefighter (2010 – 2019)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Ensured proper implementation of firefighting techniques and
-              practices including controlling and extinguishing fires, operating
-              hose lines, and fire ground operations, ventilation, and search
-              and rescue.
-            </li>
-            <li>
-              Oversaw comprehensive understanding, operation, and maintenance of
-              fire engines, ladder trucks, technical rescue apparatus, and
-              response trailers.
-            </li>
-            <li>
-              Performed ALS techniques as needed within emergency situations
-              including the use of an esophageal or dual lumen airway device and
-              oral intubation using laryngoscopy.
-            </li>
-            <li>
-              Collaborated with a talented and high performing team of
-              firefighters in high pressure and stressful situations as needed.
-            </li>
-            <li>
-              Utilized proven and demonstrated knowledge of multiple
-              certifications including Pediatric Advanced Life Support,
-              Prehospital Trauma Life Support, and Advanced Cardiac Life
-              Support, among others.
-            </li>
-          </ul>
-        </div> */}
-
+        <h5 className='mt-8 text-slate-500 font-bold text-xl uppercase'>
+          Selected Delivery Highlights
+        </h5>
+        <ul className='list-disc list-outside px-7 py-4 leading-relaxed'>
+          <li>
+            BankWare ↔ operational channels: Core banking API and ZIPIT/Postilion services
+            through design, test, go-live readiness, and support tooling.
+          </li>
+          <li>
+            Multi-site merchant operations: POS, catalogue/redemption, and admin portal
+            connecting branch activity to payment and programme financial records.
+          </li>
+          <li>
+            Leadership: 3+ years as Chief Software Engineer owning team delivery,
+            architecture, and partner/stakeholder engagement.
+          </li>
+        </ul>
       </div>
     </>
   );

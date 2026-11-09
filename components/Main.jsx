@@ -28,15 +28,19 @@ const Main = () => {
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
           <p className='uppercase text-sm tracking-widest text-gray-600'>
-            LET&#39;S BUILD SOMETHING TOGETHER
+            Integrations · APIs · Financial Operations · Delivery Leadership
           </p>
           <h1 className='py-4 text-gray-700'>
             Hi, I&#39;m <span className=' text-purple-700'> Kholwani</span>
           </h1>
-          <h1 className='py-2 text-gray-700'>A Full-Stack Engineer: <span className=' italic text-xl text-purple-700'>Meta Certified</span></h1>
+          <h1 className='py-2 text-gray-700 text-2xl sm:text-4xl'>
+            Business Systems &amp; Software Development Lead
+          </h1>
+          <p className='py-2 text-purple-700 italic'>Meta Certified</p>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
-            I’m focused on building responsive full stack web applications
-            integrating back-end technologies.
+            8+ years building and integrating operational and financial platforms,
+            connecting POS, payment switches, and customer apps to core banking
+            systems through design, go-live, and ongoing support.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a
@@ -74,10 +78,10 @@ const Main = () => {
           {
             data?.map(({name,icon, link}, index) => (
               <a key={index} href={link} target='_blank' rel='noreferrer'>
-                <div key={index} className='p-6 cursor-pointer hover:scale-150 ease-in duration-300'>
+                <div className='p-6 cursor-pointer hover:scale-150 ease-in duration-300'>
                   <div className='grid grid-cols-1 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image className=' object-contain h-20 w-24 md:h-26 md:w-26' src={icon} width={400} height={400} alt='/' />
+                        <Image className=' object-contain h-20 w-24 md:h-26 md:w-26' src={icon} width={400} height={400} alt={name} />
                     </div>
                   </div>
                 </div>

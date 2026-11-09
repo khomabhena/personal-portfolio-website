@@ -26,10 +26,11 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className=' mt-8 text-slate-700'>Kholwani Mabhena</h2>
-                <p className=' text-slate-600'>Software Engineer</p>
+                <p className=' text-slate-600'>Business Systems &amp; Software Development Lead</p>
                 <p className='py-4 text-slate-600'>
-                  I am available for freelance or full-time positions. Contact
-                  me and let&apos;s talk.
+                  Based in Harare. Open to roles in business systems, integrations,
+                  and software delivery leadership. Reach me at colwanymab@gmail.com
+                  or use the form.
                 </p>
               </div>
               <div>
@@ -54,9 +55,11 @@ const Contact = () => {
                     </div>
                   </a>
 
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <AiOutlineMail />
-                  </div>
+                  <a href='mailto:colwanymab@gmail.com'>
+                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                      <AiOutlineMail />
+                    </div>
+                  </a>
                   <Link href='/resume'>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <BsFillPersonLinesFill />

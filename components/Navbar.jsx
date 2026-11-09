@@ -75,6 +75,9 @@ const Navbar = () => {
               <Link href='/#technologies'>Technologies</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href='/#experience'>Experience</Link>
+            </li>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/#projects'>Projects</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
@@ -129,7 +132,7 @@ const Navbar = () => {
             </div>
             <div className='border-b border-gray-300 my-4'>
               <p className='w-[85%] md:w-[90%] py-4'>
-                Let&#39;s build something legendary together
+                Integrations · APIs · Financial Operations
               </p>
             </div>
           </div>
@@ -148,6 +151,11 @@ const Navbar = () => {
               <Link href='/#technologies'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Technologies
+                </li>
+              </Link>
+              <Link href='/#experience'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                  Experience
                 </li>
               </Link>
               <Link href='/#projects'>
@@ -172,7 +180,7 @@ const Navbar = () => {
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
-                  href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                  href='https://www.linkedin.com/in/khomabhena/'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -181,7 +189,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href='https://github.com/fireclint'
+                  href='https://github.com/khomabhena'
                   target='_blank'
                   rel='noreferrer'
                 >
