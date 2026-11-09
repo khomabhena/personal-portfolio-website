@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import getExperience from '@/data/experience';
 import SEO from '@/components/SEO';
 import Navbar from '@/components/Navbar';
+import site from '@/data/site';
 
 const resume = () => {
   const experience = getExperience();
@@ -14,6 +15,24 @@ const resume = () => {
         description='Resume of Kholwani Mabhena: Business Systems and Software Development Lead. Experience with Postilion, BankWare, ZIPIT 3.0, ZimSwitch, ISO 8583, payment gateways, React, Node.js, Django, and fintech delivery at Tapseed and Astro Mobile.'
         path='/resume'
         type='profile'
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'ProfilePage',
+          url: `${site.url}/resume`,
+          name: `${site.name} Resume`,
+          dateCreated: '2023-06-01T00:00:00+02:00',
+          dateModified: '2026-11-09T00:00:00+02:00',
+          mainEntity: {
+            '@type': 'Person',
+            name: site.name,
+            alternateName: 'Kho Mabhena',
+            url: site.url,
+            image: site.image,
+            jobTitle: 'Business Systems & Software Development Lead',
+            email: site.email,
+            sameAs: site.sameAs,
+          },
+        }}
       />
       <Navbar />
 
